@@ -1,0 +1,369 @@
+########################################################################################################################
+# Product Name         : SimNet ENM GSM
+# Product Number       : CXP 903 6542
+# Sprint Drop          : 23.11
+# Script Base Revision : CXP 903 6542-1-26
+# Repository           : https://gerrit.ericsson.se/#/admin/projects/OSS/com.ericsson.ci.simnet/enm-gsm-testware
+########################################################################################################################
+# US/SNIPs/CRs/TRs/SNADs/SNAGs/ROLLBACK/EW
+# US = User Story
+# SNIP = SimNet Improvement Programme
+# CR = Change Request
+# SJ = SimNet Jira ticket
+# TR = Trouble Report for OSS-RC/ENM etc.
+# SNAD = SubNet Adapter
+# SNAG = Issue found by test
+# ROLLBACK = Issue requiring network functionailty rollback
+# EW = Emergency Workaround for an known issue
+#-----------------------------------------------------------------
+#23.11
+#-----------------------------------------------------------------
+#SJ - CXP 903 6542-1-26 23-June-2023 znrvbia
+#SJ - NSS-44314
+#
+#Scripts Modified:
+#         ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/createDG2Product.sh
+#-----------------------------------------------------------------
+#23.04
+#-----------------------------------------------------------------
+#SJ - CXP 903 6542-1-25 17-1-2023 zmogsiv
+#SJ - NSS-42004
+#
+#Scripts Modified:
+#         ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/createSimulation.sh
+#         ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/SetGranAttribute_RV.sh
+#         ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/setGranAttribute.sh               
+#-----------------------------------------------------------------
+#23.01
+#-----------------------------------------------------------------
+#SJ - CXP 903 6542-1-24 15-11-2022 zmogsiv
+#SJ - NSS-41425
+#
+#Scripts Modified:
+#         ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/createDG2Product.sh
+#                        
+#-----------------------------------------------------------------
+#23.01
+#-----------------------------------------------------------------
+# SJ - CXP 903 6542-1-23 22-11-2022 znrvbia
+# SJ - NSS-41461
+#
+# Scripts Modified:
+#         bin/createDG2Product.sh
+#         bin/WriteSimData.sh
+#-----------------------------------------------------------------
+#22.10
+#-----------------------------------------------------------------
+# SJ - CXP 903 6542-1-22 27-05-2022 zachaja
+# SJ - NSS-39187
+#
+# Scripts Modified:
+#         bin/createExternalGsmRelations.sh
+#         bin/createExternalRelations.sh
+#-----------------------------------------------------------------
+#22.04
+#-----------------------------------------------------------------
+# SJ - CXP 903 6542-1-21 04-02-2022 zmogsiv
+# SJ - NSS-38490
+#
+# Scripts Modified:
+#         bin/Bsc_Cellbulkup.sh
+#         bin/updateMoInformation.sh
+#----------------------------------------------------------------
+# 22.04
+#-----------------------------------------------------------------
+# SJ - CXP 903 6542-1-20 20-01-2022 znrvbia
+# SJ - NSS-37802
+#
+# Scripts Modified:
+#         bin/createDG2Product.sh
+#-----------------------------------------------------------------
+## 22.02
+##----------------------------------------------------------------
+#-----------------------------------------------------------------
+# SJ - CXP 903 6542-1-19 23-12-2021 zyamkan
+# SJ - NO-JIRA
+#
+# Scripts Modified:
+#         bin/Bsc_Cellbulkup.sh
+#         bin/bscFeatures.sh
+#         bin/createGsmTopology.sh
+#         bin/createLanswitch.sh
+#         bin/createUtranRelations.sh
+#         bin/relateDg2ToBsc.sh
+#         dat/Product.env
+# ----------------------------------------------------------------
+## SJ - CXP 903 6542-1-18 17-12-2021 zhainic
+## SJ - NSS-37850
+##
+## Scripts Modified:
+##         bin/createDG2Product.sh
+##------------------------------------------------------
+## SJ - CXP 903 6542-1-17 06-12-2021 znrvbia
+## SJ - NSS-37802
+##
+## Scripts Modified:
+##         bin/createDG2Product.sh
+#-----------------------------------------------------------------
+# 21.17
+#-----------------------------------------------------------------
+# SJ - CXP 903 6542-1-16 07-10-2021 zyamkan
+# SJ - NSS-37353
+#
+# Scripts Modified:
+#         bin/bscFeatures.sh
+#         dat/Product.env
+###---------------------------------------------------------------
+###21.15
+###---------------------------------------------------------------
+#### SJ - CXP 903 6542-1-15 13-09-2021 zyamkan
+#### SJ - NSS-36905,37156,37155,37186
+####
+#### Scripts Modified:
+####      bin/bscFeatures.sh
+####      bin/createDG2nodes.sh
+####      bin/createGcellBsc.sh
+####      bin/createGranBscNetwork.sh
+####      bin/createSimulation.sh
+####      bin/createUtranRelations.sh
+####      bin/setGranAttribute.sh
+####      bin/startBuild.sh
+####      customdata/WRANtoGRAN_handover.csv
+####      dat/Product.env
+###---------------------------------------------------------------
+###---------------------------------------------------------------
+###21.13
+###---------------------------------------------------------------
+#### SJ - CXP 903 6542-1-14 26-07-2021 zyamkan
+#### SJ - NSS-35602,35603
+####
+#### Scrips Added:
+####      bin/setGranAttribute.sh
+#### Scripts Modified:
+####      bin/createGranBscNetwork.sh
+####      bin/createGcellBsc.sh
+####      dat/Product.env
+###---------------------------------------------------------------
+###21.12
+####---------------------------------------------------------------
+#### SJ - CXP 903 6542-1-13 12-07-2021 zyamkan
+#### SJ - NSS-36059
+####
+#### Scripts Added:
+####      bin/reparentingBSC.sh
+#### Scripts Modified:
+####      bin/createGranBscNetwork.sh
+##---------------------------------------------------------------
+##21.11
+###---------------------------------------------------------------
+### SJ - CXP 903 6542-1-12 08-06-2021 zyamkan
+### SJ - NSS-35471,35472,35753
+###
+### Scripts Modified:
+###      bin/updateMoInformation.sh
+###      bin/PmUnitTest.pl
+###      bin/bspFeatures.sh
+###      bin/createBspNode.sh
+###      bin/createECM.sh
+###      bin/createExternalGsmRelations.sh
+###      bin/createExternalRelations.sh
+###      bin/createGcellBsc.sh
+###      bin/createInternalCellRelation.sh
+###      bin/createMsc.sh
+###      bin/createMscBlade.sh
+###      bin/createUtranRelations.sh
+###      dat/Build.env
+###      dat/Product.env
+###---------------------------------------------------------------
+##---------------------------------------------------------------
+#21.08
+##-------------------------------------------------------------
+## SJ - CXP 903 6542-1-11 07-04-2021 zyamkan
+## SJ - NSS-34531
+##
+## Scripts Modified:
+##      dat/Product.env
+##      bin/createExternalRelations.sh
+##      bin/Bsc_Cellbulkup.sh
+##      bin/setDG2Ciphers.sh
+##      bin/createSimulation.sh
+##      bin/createMscBlade.sh
+##      bin/setExceptions.sh
+##      bin/setRadioNodeG2.sh
+###---------------------------------------------------------------
+##----------------------------------------------------------------
+#21.06
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-9 05-03-2021 zyamkan
+## SJ - NSS-34459
+##
+## Scripts Modified:
+##      bin/createSimulation.sh
+##      bin/createBscTopology.sh
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-9 05-03-2021 zyamkan
+## SJ - NSS-34469
+##
+## Scripts Modified:
+##      bin/bscFeatures.sh
+##      bin/createMsc.sh
+##      bin/setSTG.sh
+##      bin/createSimulation.sh
+##      bin/createGranBscNetwork.sh
+##      customdata/WRANtoGRAN_handover.csv
+##      customdata/GsmTopology.csv
+##      dat/Build.env
+##      dat/Build30K.env
+##      dat/Build10K.env
+##
+## Scripts Added:
+##      bin/createECM.sh
+##
+## Files Added:
+##      customdata/WRANtoGRAN_handover_NRM5.csv
+##      customdata/GSMFile_handover.csv
+##      customdata/GsmTopology_NRM5.csv
+##
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-8 04-03-2021 zyamkan
+## SJ - NSS-34293,NSS-34469,NSS-34459,NSS-34065
+##      NSS-30601,NSS-30602,NSS-30603,NSS-34154
+##
+## Scripts Modified:
+##      bin/createBscTopology.sh
+##      bin/createBts.sh
+##      bin/createDG2nodes.sh
+##      bin/createExternalRelations.sh
+##      bin/createGcellBsc.sh
+##      bin/createGcellBscRelations.sh
+##      bin/createGeranInternalRelations.sh
+##      bin/createGeranIntraRelations.sh
+##      bin/createGranBscNetwork.sh
+##      bin/createMsc.sh
+##      bin/createMscBlade.sh
+##      bin/createSimulation.sh
+##      bin/createUtranRelations.sh
+##      bin/mscBladeInfo.sh
+##      bin/mscProduct.sh
+##      bin/relateDg2ToBsc.sh
+##      bin/setCpname.sh
+##      bin/setDG2Ciphers.sh
+##      bin/setExceptions.sh
+##      bin/setRadioNodeG2.sh
+##      bin/createBspNode.sh
+##      bin/bspFeatures.sh
+##      bin/Bsc_Cellbulkup.sh
+##      bin/BulkupG12.sh
+##      bin/BulkupHwInventory.sh
+##      bin/BulkupInfinite.sh
+##      bin/PmUnitTest.pl
+##      customdata/WRANtoGRAN_handover.csv
+##      dat/Build.env
+##      dat/Build10K.env
+##      dat/Build30K.env
+##      dat/Product.env
+#
+## Scripts Added:
+##      bin/BuildCounts.sh
+##      bin/createfileM.sh
+#
+## Files Added:
+##      bin/preBuildGSMCounts.csv
+##      bin/simData.csv
+##----------------------------------------------------------------
+21.03
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-7 23-12-2020 zyamkan
+## SJ - NSS-33841
+##
+## Scripts Modified:
+##      bin/BulkupG12.sh
+##      bin/BulkupHwInventory.sh
+##      bin/bspFeatures.sh
+##      bin/createDG2Product.sh
+##      bin/createDG2nodes.sh
+##      bin/createGsmTopology.sh
+##      bin/createSimulation.sh
+##      bin/setDG2Ciphers.sh
+##      bin/createBscTopology.sh
+##      bin/startBuild.sh
+##      dat/Product.env
+##----------------------------------------------------------------
+##----------------------------------------------------------------
+20.13
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-6 05-08-2020 zyamkan
+## SJ - NSS-31737
+##
+## Scripts Modified:
+##      bin/createGsmTopology.sh
+##----------------------------------------------------------------
+20.11
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-5 17-06-2020 -zsujmad
+## SJ - NSS-31187
+##
+## Scripts Modified:
+##      bin/relateDg2ToBsc.sh
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/pom.xml
+##      ERICTAFenmsimnetgsmbuild_operators/pom.xml
+##      pom.xml
+##      test-pom-enmgsm/pom.xml
+## Scripts Added:
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/java/com/ericsson/ci/simnet/test/cases/CLIScriptExecutionTest.java
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/java/com/ericsson/ci/simnet/test/cases/TestCaseException.java
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/data/ScriptExecutionCommandsData.csv
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/log4j.properties
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/startBuild.sh
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/suites/CLIScriptExecutionTestSuite.xml
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/taf_profiles/GSM/datadriven.properties
+##      ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/taf_properties/datadriven.properties
+##      ERICTAFenmsimnetgsmbuild_operators/src/main/java/com/ericsson/ci/simnet/test/operators/CLIScriptExecutionOperator.java
+##      ERICTAFenmsimnetgsmbuild_operators/src/main/java/com/ericsson/ci/simnet/test/operators/ScriptExecutionOperator.java
+##      ERICTAFenmsimnetgsmbuild_operators/src/main/java/com/ericsson/ci/simnet/test/utils/HostHandler.java
+##      ERICTAFenmsimnetgsmbuild_operators/src/main/java/com/ericsson/ci/simnet/test/utils/TafFileUtils.java
+##      ERICTAFenmsimnetgsmbuild_operators/src/main/java/com/ericsson/ci/simnet/test/utils/ZipUtility.java
+##      ERICTAFenmsimnetgsmbuild_operators/src/main/resources/log4j.properties
+##----------------------------------------------------------------
+20.07
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-4 03-04-2020 -zyamkan
+## SJ - NSS-27983
+##
+## Scripts Modified:
+##      unitTests/pmFileLocation.sh
+##----------------------------------------------------------------
+20.05
+##----------------------------------------------------------------
+## SJ - CXP 903 6542-1-3 21-02-2020 -zyamkan
+## SJ - NSS-29142
+##
+## Scripts Modified:
+##      dat/Product.env
+##      bin/createDG2nodes.sh
+##      bin/PmUnitTest.pl
+##      bin/createSimulation.sh
+##----------------------------------------------------------------
+#
+#----------------------------------------------------------------
+19.17
+#----------------------------------------------------------------
+# SJ - CXP 903 6542-1-2 06-11-2019 zyamkan
+# SJ - NSS-27634
+#
+# Scripts Modified:
+#      bin/createDG2Product.sh
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+#example
+#----------------------------------------------------------------
+5G 19.12
+#----------------------------------------------------------------
+# SJ - CXP 903 6542-1-1 -25/07/2019 -zchianu
+# SJ - NSS-24847
+#
+# Scripts Modified:
+#      dat/ProductData.env
+#----------------------------------------------------------------
+#----------------------------------------------------------------
+

@@ -1,0 +1,2 @@
+command,expectedExitCode
+/netsim/enm-gsm-testware/ERICTAFenmsimnetgsmbuild_CXP9036542/src/main/resources/scripts/enm-gsm/bin/startBuild.sh ,0
